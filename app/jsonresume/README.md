@@ -18,7 +18,7 @@
 - `apt update`
 - `apt install chromium`
 
-👉 pnpm run start exécute le script start défini dans le fichier package.json (génère le PDF en fonction resume.json).
+👉 pnpm run start exécute le script start défini dans le fichier package.json (génère le PDF en fonction de resume.json).
 - `pnpm run start`
 
 

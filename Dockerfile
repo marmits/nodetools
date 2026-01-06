@@ -75,9 +75,6 @@ ENV PNPM_STORE_PATH=/root/.local/share/pnpm/store
 # 2) Variable "npm-style" qui override directement la clé `store-dir`
 ENV npm_config_store_dir=/root/.local/share/pnpm/store
 
-#RUN printf "store-dir=/root/.local/share/pnpm/store\n" > /etc/pnpmrc
-
-
 # ==========
 #  Shell par défaut
 # ==========

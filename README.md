@@ -1,3 +1,6 @@
+## 🐋 NodeTools
+Conteneur Docker NodeJS avec npm, pnpm, yarn et outils dev.
+
 ## Description
 - Conteneur Docker avec plusieurs gestionnaires de paquets NodeJS (npm, pnpm, yarn) et outils de développement courants.
 - Conteneur configuré pour pnpm (store persistant, volumes, config forcée).
