@@ -1,7 +1,7 @@
 ## JSON Resume
 Générateur de CV en ligne de commande.  
 https://jsonresume.org
-## ✅ Installation 
+# ✅ Installation 
 
 👉 **`pnpm approve-builds` sert à autoriser manuellement les dépendances qui doivent exécuter des scripts d’installation (comme Puppeteer ou sharp), car pnpm les bloque par sécurité par défaut.**
 
@@ -35,8 +35,9 @@ https://jsonresume.org
 | **Pourquoi des libs manquent dans Docker ?**       | Chrome dépend de nombreuses libs système non installées dans node:slim |
 | **Pourquoi “installer manuellement” maintenant ?** | Parce que Puppeteer ne bundle plus Chromium par défaut                 |
 
+***
 
-## ✅ Installer des thèmes supplémentaires et utiliser des thèmes JSON Resume
+# ✅ Installer des thèmes supplémentaires et utiliser des thèmes JSON Resume
 
 *(npmjs.com & GitHub)*
 
