@@ -170,4 +170,4 @@ Liste d’une cinquantaine de thèmes, avec liens et aperçu.    [\[github.com\]
 ***
 
 ### Version PDF
-Modifier le fichier `index.js` avec le theme souhaité.
+Modifier le fichier `pdfResume.js` avec le theme souhaité.
