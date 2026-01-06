@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "resumed init",
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "jsonresume-theme-stackoverflowmar": "github:marmits/jsonresume-theme-stackoverflowmar#v2.0.1",
+    "puppeteer": "^24.22.3",
+    "resumed": "^6.1.0"
+  },
+  "name": "jsonresumemarmits",
+  "version": "2.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

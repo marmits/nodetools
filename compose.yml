@@ -1,0 +1,30 @@
+
+services:
+  nodetools:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_TAG: "${NODE_TAG}"
+    image: "node-dev:${NODE_TAG}"
+    container_name: "${CONTAINER_NAME:-marmits_nodetools}"
+    user: "0:0"                # <- toolbox = root (simple, aucun souci de permissions)
+    working_dir: /app
+    volumes:
+      - ./app:/app
+      - npm_cache:/root/.npm
+      - pnpm_store:/root/.local/share/pnpm/store
+      - yarn_cache:/root/.cache/yarn
+    stdin_open: true
+    tty: true
+    networks:
+      - marmits_nodetools_net
+
+volumes:
+  npm_cache:
+  pnpm_store:
+  yarn_cache:
+
+networks:
+  marmits_nodetools_net:
+    driver: bridge
