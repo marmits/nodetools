@@ -1,5 +1,5 @@
 
-# Utilise Debian Bookworm (stable) pour une meilleure compatibilité native
+# Utilise Debian Trixie (stable) pour une meilleure compatibilité native
 
 ARG NODE_TAG="lts-trixie"
 FROM node:${NODE_TAG}
