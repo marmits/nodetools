@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "init": "resumed init",
-    "start": "node index.js",
+    "pdf": "node index.js",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
