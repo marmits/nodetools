@@ -1,3 +1,5 @@
+## JSON Resume
+- [jsonresume.org](https://jsonresume.org)
 ## Utilisation du theme en LOCAL / VCS
 ***
 [![NodeJs Version](https://img.shields.io/npm/v/node?label=node)](https://nodejs.org/fr/blog/release/v24.12.0)    
