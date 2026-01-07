@@ -16,7 +16,7 @@ FROM node:${NODE_TAG}
 RUN apt-get update && apt-get install -y --no-install-recommends locales tzdata \
     bash zsh git curl wget nano ca-certificates \
     build-essential python3 python3-venv python3-setuptools \
-    nano jq ripgrep fzf pkg-config openssh-client \
+    jq ripgrep fzf pkg-config openssh-client \
  && sed -i 's/^# \(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen \
  && sed -i 's/^# \(C.UTF-8 UTF-8\)/\1/' /etc/locale.gen \
  && locale-gen \
