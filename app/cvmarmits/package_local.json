@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "pnpm": {
     "link-workspace-packages": true,
-    "overrides": {}
+    "overrides": {
+      "jsonresume-theme-stackoverflowmar": "workspace:*"
+    }
   }
 }

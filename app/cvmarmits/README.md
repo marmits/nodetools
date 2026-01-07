@@ -2,6 +2,7 @@
 ***
 
 ## Prérequis
+Dans le répertoire de l'hôte `app/cvmarmits/` (workspace pnpm), clone du thème JSON Resume **stackoverflowmar**:
 Install en local du theme JSON Resume **stackovermar** dans un workspace pnpm avec l’app **jsonresume**.
 - `git clone https://github.com/marmits/jsonresume-theme-stackoverflowmar.git`
 
