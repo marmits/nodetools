@@ -13,13 +13,15 @@ FROM node:${NODE_TAG}
 # - git, curl, wget : outils classiques
 # - ca-certificates : TLS propre pour npm/yarn/pnpm
 # - openssh-client : pratique (optionnel)
-RUN apt-get update && apt-get install -y --no-install-recommends locales \
+RUN apt-get update && apt-get install -y --no-install-recommends locales tzdata \
     bash zsh git curl wget nano ca-certificates \
     build-essential python3 python3-venv python3-setuptools \
     jq ripgrep fzf pkg-config openssh-client \
  && sed -i 's/^# \(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen \
  && sed -i 's/^# \(C.UTF-8 UTF-8\)/\1/' /etc/locale.gen \
  && locale-gen \
+ && ln -fs /usr/share/zoneinfo/Europe/Paris /etc/localtime \
+ && dpkg-reconfigure -f noninteractive tzdata \
  && rm -rf /var/lib/apt/lists/*
 
 
