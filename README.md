@@ -1,4 +1,5 @@
 ## 🐋 NodeTools
+[![NodeJs Version](https://img.shields.io/npm/v/node?label=node)](https://nodejs.org/fr/blog/release/v24.12.0)  
 Conteneur Docker NodeJS avec npm, pnpm, yarn et outils dev.
 
 ## Description

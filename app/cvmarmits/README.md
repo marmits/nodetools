@@ -1,5 +1,9 @@
 ## Utilisation du theme en LOCAL / VCS
 ***
+[![NodeJs Version](https://img.shields.io/npm/v/node?label=node)](https://nodejs.org/fr/blog/release/v24.12.0)    
+[![](https://img.shields.io/github/v/release/rbardini/resumed?label=rbardini/resumed)](https://github.com/rbardini/resumed)  
+[![](https://img.shields.io/github/package-json/v/marmits/jsonresume-theme-stackoverflowmar?label=jsonresume-theme-stackoverflowmar)](https://github.com/marmits/jsonresume-theme-stackoverflowmar)  
+[![NPM Version](https://img.shields.io/npm/v/puppeteer?label=puppeteer)](https://www.npmjs.com/package/puppeteer)
 
 ## Prérequis
 Dans le répertoire de l'hôte `app/cvmarmits/` (workspace pnpm), clone du thème JSON Resume **stackoverflowmar**:
