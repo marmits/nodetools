@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "cvmarmits-workspace",
+  "version": "0.0.0",
+  "pnpm": {
+    "link-workspace-packages": true,
+    "overrides": {
+      "jsonresume-theme-stackoverflowmar": "workspace:*"
+    }
+  }
+}

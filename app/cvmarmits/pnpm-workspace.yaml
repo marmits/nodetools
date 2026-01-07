@@ -1,0 +1,7 @@
+packages:
+  - "jsonresume"
+  - "jsonresume-theme-stackoverflowmar"
+
+
+onlyBuiltDependencies:
+  - "jsonresume-theme-stackoverflowmar"

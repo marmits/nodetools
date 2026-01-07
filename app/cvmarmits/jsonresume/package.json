@@ -3,11 +3,12 @@
   "type": "module",
   "scripts": {
     "init": "resumed init",
+    "resumed": "resumed init",
     "pdf": "node pdfResume.js",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "jsonresume-theme-stackoverflowmar": "github:marmits/jsonresume-theme-stackoverflowmar#v2.0.1",
+    "jsonresume-theme-stackoverflowmar": "workspace:*",
     "puppeteer": "^24.34.0",
     "resumed": "^6.1.0"
   },
