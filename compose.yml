@@ -5,14 +5,30 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        NODE_TAG: "${NODE_TAG}"
-    image: "node-dev:${NODE_TAG}"
+        NODE_TAG: "${NODE_TAG:-24-trixie-slim}"
+    image: "node-dev:${NODE_TAG:-24-trixie-slim}"
     container_name: "${CONTAINER_NAME:-marmits_nodetools}"
     user: "0:0"                # <- toolbox = root (simple, aucun souci de permissions)
     working_dir: /app
     volumes:
-      - ./app:/app
+      # Les CV restent dans leurs dépôts Git dédiés et sont montés directement.
+      - type: bind
+        source: ${HOME}/devweb/perso/cv
+        target: /app/cvmarmits
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${HOME}/devweb/perso/cvmilo
+        target: /app/cvmilo
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./app/image-to-ascii
+        target: /app/image-to-ascii
+        bind:
+          create_host_path: false
       - npm_cache:/root/.npm
+      - puppeteer_cache:/root/.cache/puppeteer
       - pnpm_store:/root/.local/share/pnpm/store
       - yarn_cache:/root/.cache/yarn
     stdin_open: true
@@ -22,6 +38,7 @@ services:
 
 volumes:
   npm_cache:
+  puppeteer_cache:
   pnpm_store:
   yarn_cache:
 
