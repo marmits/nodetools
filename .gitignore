@@ -3,8 +3,7 @@
 agent/demandes/
 /app/cvmarmits
 /app/cvmilo
-app/jsonresume-theme-stackoverflowmar
+/app/jsonresume-theme-stackoverflowmar
 node_modules/
 pnpm-lock.yaml
-
 resume.*
