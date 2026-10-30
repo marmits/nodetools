@@ -11,23 +11,7 @@ services:
     user: "0:0"                # <- toolbox = root (simple, aucun souci de permissions)
     working_dir: /app
     volumes:
-      # Les CV restent dans leurs dépôts Git dédiés et sont montés directement.
-      - type: bind
-        source: "${CVMARMITS_PATH:?CVMARMITS_PATH doit être défini dans .env}"
-        target: /app/cvmarmits
-        bind:
-          create_host_path: false
-      - type: bind
-        source: "${CVMILO_PATH:?CVMILO_PATH doit être défini dans .env}"
-        target: /app/cvmilo
-        bind:
-          create_host_path: false
-      # Thème JSON Resume en développement local.
-      - type: bind
-        source: ./app/jsonresume-theme-stackoverflowmar
-        target: /app/jsonresume-theme-stackoverflowmar
-        bind:
-          create_host_path: false
+      # Applications optionnelles : choisir leurs fichiers compose.*.yml.
       - type: bind
         source: ./app/image-to-ascii
         target: /app/image-to-ascii

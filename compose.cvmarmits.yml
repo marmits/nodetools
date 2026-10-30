@@ -1,0 +1,8 @@
+services:
+  nodetools:
+    volumes:
+      - type: bind
+        source: "${CVMARMITS_PATH:?CVMARMITS_PATH doit être défini dans .env}"
+        target: /app/cvmarmits
+        bind:
+          create_host_path: false

@@ -1,0 +1,8 @@
+services:
+  nodetools:
+    volumes:
+      - type: bind
+        source: ./app/jsonresume-theme-stackoverflowmar
+        target: /app/jsonresume-theme-stackoverflowmar
+        bind:
+          create_host_path: false

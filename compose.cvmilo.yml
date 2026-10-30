@@ -1,0 +1,8 @@
+services:
+  nodetools:
+    volumes:
+      - type: bind
+        source: "${CVMILO_PATH:?CVMILO_PATH doit être défini dans .env}"
+        target: /app/cvmilo
+        bind:
+          create_host_path: false

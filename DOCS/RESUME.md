@@ -19,6 +19,8 @@ ln -s ../../../devweb/perso/cvmilo app/cvmilo
 
 Sur un nouveau poste, clone d’abord les dépôts `marmits/cv` et `marmits/cvmilo` dans `~/devweb/perso/`. Les liens symboliques locaux sont ignorés par Git. La documentation de `cvmarmits` reste accessible dans [`app/cvmarmits/DOC.md`](app/cvmarmits/DOC.md).
 
+Pour choisir quels dépôts et thème sont montés dans Docker, voir [Montages Docker optionnels des applications CV](DOCKER_VOLUMES_OPTIONNELS.md).
+
 ### Générer les CV
 
 Après le premier démarrage, chaque application s’installe et se génère depuis le même conteneur :
