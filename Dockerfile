@@ -1,7 +1,7 @@
 
 # Utilise Debian Trixie (stable) pour une meilleure compatibilité native
 
-ARG NODE_TAG="24-trixie-slim"
+ARG NODE_TAG="26-trixie-slim"
 FROM node:${NODE_TAG}
 
 

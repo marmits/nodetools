@@ -1,6 +1,6 @@
 ## 🐋 NodeTools
 
-[![NodeJs Version](https://img.shields.io/badge/node-24.22.x-blue?logo=node.js&logoColor=white)](https://nodejs.org/fr/blog/release/v24.22.0)  
+[![NodeJs Version](https://img.shields.io/npm/v/node?label=node)](https://nodejs.org/download/release/latest/)  
 Conteneur Docker NodeJS avec npm, pnpm, yarn et outils dev.
 
 ## Description
